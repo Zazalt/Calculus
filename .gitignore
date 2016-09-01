@@ -4,5 +4,6 @@ phpunit.xml
 *.url
 */Thumbs.db
 *pull-commit-push*.cmd
+*zcomposer-re-install.cmd
 /vendor
 composer.lock
