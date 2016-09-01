@@ -1,0 +1,8 @@
+.DS_Store
+phpunit.xml
+*.log
+*.url
+*/Thumbs.db
+*pull-commit-push*.cmd
+/vendor
+composer.lock

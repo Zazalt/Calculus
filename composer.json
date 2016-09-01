@@ -1,0 +1,38 @@
+{
+    "name": "zazalt/calculus",
+    "description": "Calculus",
+    "homepage": "https://github.com/Zazalt/Calculus",
+    "keywords": [
+        "string"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zazalt",
+            "email": "example@example.com",
+            "homepage": "https://github.com/Zazalt/Calculus"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zazalt\\Calculus\\": "src/"
+        }
+    },
+    "extra": {
+        "zazalt": {
+            "language": "php",
+            "title": "Calculus",
+            "description": [
+                "Calculus is a PHP library for mathematics/2D/3D computing"
+            ],
+            "github": "Zazalt",
+            "repository": "Calculus",
+            "version": "beta",
+            "generateUsage": true,
+            "examples": false
+        }
+    }
+}
