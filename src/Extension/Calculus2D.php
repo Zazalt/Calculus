@@ -27,6 +27,8 @@ trait Calculus2D
      */
     public function resizeRectangle(Array $rectangleDimensions = [], Array $rectangleNewDimensions = [])
     {
+        $newWidth = $newHeight = min($rectangleNewDimensions[1], $rectangleNewDimensions[0]);
+
         if($rectangleDimensions[0] != $rectangleDimensions[1]) {
             if($rectangleDimensions[0] > $rectangleDimensions[1]) {
                 $newWidth = $rectangleNewDimensions[0];
@@ -45,8 +47,6 @@ trait Calculus2D
                     $newHeight = (($newWidth * $rectangleDimensions[1]) / $rectangleDimensions[0]);
                 }
             }
-        } else {
-            $newWidth = $newHeight = min($rectangleNewDimensions[1], $rectangleNewDimensions[0]);
         }
 
         return [
