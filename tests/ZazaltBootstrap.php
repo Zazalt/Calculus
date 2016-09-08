@@ -2,6 +2,12 @@
 
 namespace Zazalt\Calculus\Tests;
 
+// Set timezone
+date_default_timezone_set('UTC');
+
+// Prevent session cookies
+ini_set('session.use_cookies', 0);
+
 // Enable Composer autoloader
 $autoloader = require dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -10,7 +16,7 @@ $autoloader->addPsr4('Zazalt\Calculus\Tests\\', __DIR__);
 
 class ZazaltTest extends \PHPUnit_Framework_TestCase
 {
-    public function loader($what)
+    public function loader($what, $params = null)
     {
         $testedClassName    = str_replace('Test', '', substr(strrchr(get_class($what), "\\"), 1));
         $testedClassPath    = 'Zazalt\\'.$testedClassName .'\\'. $testedClassName;
@@ -37,7 +43,7 @@ class ZazaltTest extends \PHPUnit_Framework_TestCase
             }
         }
 
-        $this->that = new $testedClassPath();
+        $this->that = new $testedClassPath($params);
     }
 
     public function testZazaltFake()
