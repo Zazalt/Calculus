@@ -20,6 +20,7 @@ class Calculus
      * @param   integer $number
      * @return  boolean
      * @docs    http://en.wikipedia.org/wiki/Prime_number
+	 *  http://www.ideaflix.com/question/formula-to-calculate-distance-between-two-latitude-and-longitude-in-php/
      */
     public function isPrimeNumber($number)
     {
