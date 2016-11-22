@@ -11,6 +11,7 @@ trait Calculus2D
      * @param   array $pointB
      * @return  integer
      * @docs    https://en.wikipedia.org/wiki/Euclidean_distance#Two_dimensions
+     * @docs    http://stackoverflow.com/questions/15747673/caluclating-distance-between-two-points-on-a-flat-plane-php
      */
     public function distanceBetweenTwoPoints($pointA = [], $pointB = [])
     {
