@@ -2,13 +2,15 @@
 
 namespace Zazalt\Calculus\Tests;
 
+use Zazalt\Calculus\Calculus;
+
 class CalculusTest extends \Zazalt\Calculus\Tests\ZazaltTest
 {
     protected $that;
 
     public function __construct()
     {
-        parent::loader($this);
+        parent::loader(Calculus::class);
     }
 
     public function testIsPrimeNumber()
