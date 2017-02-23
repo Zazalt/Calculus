@@ -13,7 +13,7 @@ trait Calculus2D
      * @docs    https://en.wikipedia.org/wiki/Euclidean_distance#Two_dimensions
      * @docs    http://stackoverflow.com/questions/15747673/caluclating-distance-between-two-points-on-a-flat-plane-php
      */
-    public function distanceBetweenTwoPoints($pointA = [], $pointB = [])
+    public function distanceBetweenTwoPoints(array $pointA = [], array $pointB = []): float
     {
         return sqrt( pow($pointB[0] - $pointA[0], 2) + pow($pointB[1] - $pointA[1],2) );
     }
@@ -26,7 +26,7 @@ trait Calculus2D
      * @param   array $rectangleNewDimensions
      * @return  array
      */
-    public function resizeRectangle(Array $rectangleDimensions = [], Array $rectangleNewDimensions = [])
+    public function resizeRectangle(array $rectangleDimensions = [], array $rectangleNewDimensions = []): array
     {
         $newWidth = $newHeight = min($rectangleNewDimensions[1], $rectangleNewDimensions[0]);
 

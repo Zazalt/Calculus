@@ -22,7 +22,7 @@ class Calculus
      * @docs    http://en.wikipedia.org/wiki/Prime_number
 	 * @docs    http://www.ideaflix.com/question/formula-to-calculate-distance-between-two-latitude-and-longitude-in-php/
      */
-    public function isPrimeNumber($number)
+    public function isPrimeNumber(int $number): bool
     {
         if($number <= 3) {
             return ($number > 1);
