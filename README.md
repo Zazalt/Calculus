@@ -13,7 +13,7 @@ Calculus is a PHP library for mathematics/2D/3D computing
 
 Requirements
 ---------------
-* php >= 5.4.0
+* php >= 7.1.0
 
 Packagist Dependencies
 ---------------
